@@ -17,6 +17,7 @@ interface DistrictPageProps {
     slug: string;
     title: string;
     description: string;
+    keywords?: string[];
     h1: string;
   };
 }
