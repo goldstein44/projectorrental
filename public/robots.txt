@@ -1,0 +1,5 @@
+# robots.txt for projectorrental.com.ng
+User-agent: *
+Allow: /
+
+Sitemap: https://www.projectorrental.com.ng/sitemap.xml
