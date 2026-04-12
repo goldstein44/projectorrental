@@ -18,6 +18,8 @@ const Home = () => {
         <title>Projector Rental NG - Premium Projectors, Screens & PA Systems</title>
         <meta name="description" content="Rent high-quality projectors, large screens and powerful PA systems for events, meetings, trainings and parties. Fast same-day delivery and professional setup. Chat on WhatsApp: 08149660626" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="WAn2wjkdZr9qfCiugOwqMBEdhzID1FvgYgt2OQy27vA" />
       </Head>
 
       <main className="min-h-screen bg-gray-50">

@@ -35,6 +35,8 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
         <meta property="og:title" content={location.title} />
         <meta property="og:description" content={location.description} />
         <link rel="icon" href="/favicon.ico" />
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="WAn2wjkdZr9qfCiugOwqMBEdhzID1FvgYgt2OQy27vA" />
       </Head>
 
       <main className="min-h-screen bg-gray-50">
