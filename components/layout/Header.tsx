@@ -1,15 +1,13 @@
 // components/layout/Header.tsx
-// Universal header with text logo
-
 import Link from 'next/link';
 import FloatingWhatsApp from '../ui/FloatingWhatsApp';
 
 const Header = () => {
   return (
     <>
-      <header className="sticky top-0 bg-white border-b z-50 shadow-sm">
+      <header className="sticky top-0 bg-white border-b shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          {/* Text Logo */}
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <div className="w-11 h-11 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl flex items-center justify-center text-3xl shadow">
               📽️
@@ -22,19 +20,20 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
+          {/* Navigation Menu - All Pages */}
+          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
             <Link href="/" className="hover:text-amber-600 transition">Home</Link>
-            <Link href="#packages" className="hover:text-amber-600 transition">Packages</Link>
-            <Link href="#how-it-works" className="hover:text-amber-600 transition">How it Works</Link>
-            <Link href="#faq" className="hover:text-amber-600 transition">FAQ</Link>
+            <Link href="/about" className="hover:text-amber-600 transition">About</Link>
+            <Link href="/services" className="hover:text-amber-600 transition">Services</Link>
+            <Link href="/locations" className="hover:text-amber-600 transition">Locations</Link>
+            <Link href="/contact" className="hover:text-amber-600 transition">Contact</Link>
           </nav>
 
-          {/* Desktop WhatsApp CTA */}
+          {/* WhatsApp CTA */}
           <a
             href="https://wa.me/2348149660626"
             target="_blank"
-            className="hidden md:flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-full font-semibold text-sm transition"
+            className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-full font-semibold flex items-center gap-2 text-sm transition"
           >
             💬 WhatsApp
           </a>

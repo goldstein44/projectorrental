@@ -1,7 +1,8 @@
 // pages/index.tsx
-// Updated homepage with compelling, benefit-driven copy focused on Island premium zones
+// Final homepage with strong conversion copy and internal SEO links
 
 import Head from 'next/head';
+import Link from 'next/link';
 import { packages } from '@/lib/packages';
 import PackageCard from '@/components/ui/PackageCard';
 import HowItWorks from '@/components/sections/HowItWorks';
@@ -23,11 +24,11 @@ const Home = () => {
       </Head>
 
       <main className="min-h-screen bg-gray-50">
-        {/* HERO SECTION - Compelling & Premium */}
+        {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-28">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-3 rounded-full mb-8 text-sm font-medium">
-              📽️ Premium AV Rentals for Lagos Island 
+              📽️ Premium AV Rentals for Lagos Island
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none mb-8 font-serif">
@@ -36,7 +37,7 @@ const Home = () => {
             </h1>
 
             <p className="max-w-2xl mx-auto text-xl md:text-2xl text-amber-100 mb-12">
-              Professional projectors, crystal-clear large screens, and powerful PA systems delivered and set up the same day in Lekki Phase 1, Ikoyi, Victoria Island, Banana Island, Oniru, Elegushi, Chevron, Ajah, VGC, Sangotedo, Abraham Adesanya and Ibeju-Lekki.
+              Professional projectors, crystal-clear large screens, and powerful PA systems delivered and set up the same day across all premium Island zones.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -81,7 +82,7 @@ const Home = () => {
             </div>
 
             <div className="mt-16 text-center text-gray-600">
-              <p className="text-lg">Delivery &amp; professional setup: ₦5,000 – ₦20,000 (depending on distance and number of items)</p>
+              <p className="text-lg">Delivery &amp; professional setup: ₦5,000 – ₦20,000 (depending on distance)</p>
               <p className="mt-2">Same-day service available across all Island premium zones</p>
             </div>
           </div>
@@ -90,8 +91,41 @@ const Home = () => {
         {/* HOW IT WORKS */}
         <HowItWorks />
 
-        {/* LOCATION BLOCK - Clean & Focused */}
+        {/* LOCATION BLOCK */}
         <LocationSEOBlock />
+
+        {/* INTERNAL LINKS SECTION - SEO BOOST */}
+        <section className="py-16 bg-white border-t">
+          <div className="max-w-6xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-8">Learn More About Us</h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link 
+                href="/about" 
+                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
+              >
+                About Us
+              </Link>
+              <Link 
+                href="/services" 
+                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
+              >
+                Our Services
+              </Link>
+              <Link 
+                href="/locations" 
+                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
+              >
+                All Locations
+              </Link>
+              <Link 
+                href="/contact" 
+                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ */}
         <FAQ />
