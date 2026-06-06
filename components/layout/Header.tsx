@@ -40,9 +40,10 @@ const Header = () => {
         </div>
       </header>
 
-      <FloatingWhatsApp phone="08149660626" />
+      <FloatingWhatsApp phone="08148080273" />
     </>
   );
 };
 
 export default Header;
+

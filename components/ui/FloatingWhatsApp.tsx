@@ -7,7 +7,7 @@ interface FloatingWhatsAppProps {
   phone?: string;
 }
 
-const FloatingWhatsApp = ({ phone = "08149660626" }: FloatingWhatsAppProps) => {
+const FloatingWhatsApp = ({ phone = "08148080273" }: FloatingWhatsAppProps) => {
   const whatsappUrl = `https://wa.me/234${phone.replace(/\D/g, '')}`;
 
   return (
@@ -24,3 +24,4 @@ const FloatingWhatsApp = ({ phone = "08149660626" }: FloatingWhatsAppProps) => {
 };
 
 export default FloatingWhatsApp;
+

@@ -10,14 +10,14 @@ import FAQ from '@/components/sections/FAQ';
 import LocationSEOBlock from '@/components/ui/LocationSEOBlock';
 
 const Home = () => {
-  const whatsappNumber = "08149660626";
+  const whatsappNumber = "08148080273";
   const whatsappLink = `https://wa.me/234${whatsappNumber.replace(/\D/g, '')}`;
 
   return (
     <>
       <Head>
         <title>Projector Rental NG - Premium Projectors, Screens & PA Systems</title>
-        <meta name="description" content="Rent high-quality projectors, large screens and powerful PA systems for events, meetings, trainings and parties. Fast same-day delivery and professional setup. Chat on WhatsApp: 08149660626" />
+        <meta name="description" content="Rent high-quality projectors, large screens and powerful PA systems for events, meetings, trainings and parties. Fast same-day delivery and professional setup. Chat on WhatsApp: 08148080273" />
         <link rel="icon" href="/favicon.ico" />
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="WAn2wjkdZr9qfCiugOwqMBEdhzID1FvgYgt2OQy27vA" />
@@ -142,7 +142,7 @@ const Home = () => {
               target="_blank"
               className="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white text-2xl font-semibold px-16 py-7 rounded-3xl transition-all hover:scale-105 shadow-xl"
             >
-              💬 Chat on WhatsApp — 08149660626
+              💬 Chat on WhatsApp — 08148080273
             </a>
           </div>
         </section>
@@ -152,3 +152,4 @@ const Home = () => {
 };
 
 export default Home;
+

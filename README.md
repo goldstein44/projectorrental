@@ -6,7 +6,7 @@ Premium projector, screen & PA system rental website targeting high-value distri
 - Next.js 14 (Pages Router) + TypeScript + Tailwind CSS
 - Hyperlocal SEO for 21 premium zones (Lekki Phase 1, Ikoyi, Maitama, etc.)
 - Dynamic district pages with unique meta tags
-- Strong WhatsApp conversion (08149660626)
+- Strong WhatsApp conversion (08148080273)
 - Fully static generation (fast & SEO friendly)
 - Mobile-first, cartoon-style icons (emoji + clean design)
 - No backend, no login, no payments
@@ -19,7 +19,7 @@ Premium projector, screen & PA system rental website targeting high-value distri
 - ... (all 21 locations)
 
 ## WhatsApp Number
-08149660626 (used everywhere)
+08148080273 (used everywhere)
 
 ## Tech Stack
 - Next.js (Pages Router)
@@ -29,3 +29,4 @@ Premium projector, screen & PA system rental website targeting high-value distri
 
 ## Deployment
 Deployed on Vercel with automatic previews.
+

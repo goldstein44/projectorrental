@@ -45,7 +45,7 @@ const Footer = () => {
               💬 WhatsApp Now
             </a>
             <p className="mt-6 text-sm text-gray-400">
-              08149660626<br />
+              08148080273<br />
               Fast response • Same-day delivery
             </p>
           </div>
@@ -60,3 +60,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

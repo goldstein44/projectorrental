@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "How do I make a booking?",
-    a: "Simply click any WhatsApp button or chat us directly on 08149660626 with your preferred package and date.",
+    a: "Simply click any WhatsApp button or chat us directly on 08148080273 with your preferred package and date.",
   },
   {
     q: "Is setup included in the price?",
@@ -81,3 +81,4 @@ const FAQ = () => {
 };
 
 export default FAQ;
+

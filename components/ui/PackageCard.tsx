@@ -48,3 +48,4 @@ const PackageCard = ({ packageData, whatsappNumber }: PackageCardProps) => {
 };
 
 export default PackageCard;
+

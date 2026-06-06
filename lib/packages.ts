@@ -98,3 +98,4 @@ export const packages: Package[] = [
 ];
 
 export const deliveryFee = "₦5,000 – ₦20,000 depending on distance";
+
