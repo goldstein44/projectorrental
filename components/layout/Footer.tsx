@@ -1,6 +1,6 @@
 // components/layout/Footer.tsx
 const Footer = () => {
-  const whatsappLink = "https://wa.me/2348149660626";
+  const whatsappLink = "https://wa.me/2348148080273";
 
   return (
     <footer className="bg-gray-900 text-white py-16">

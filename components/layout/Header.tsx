@@ -31,7 +31,7 @@ const Header = () => {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/2348149660626"
+            href="https://wa.me/2348148080273"
             target="_blank"
             className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-full font-semibold flex items-center gap-2 text-sm transition"
           >
