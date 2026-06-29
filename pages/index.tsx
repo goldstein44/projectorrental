@@ -1,6 +1,4 @@
 // pages/index.tsx
-// Final homepage with strong conversion copy and internal SEO links
-
 import Head from 'next/head';
 import Link from 'next/link';
 import { packages } from '@/lib/packages';
@@ -16,10 +14,9 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Projector Rental NG - Premium Projectors, Screens & PA Systems</title>
-        <meta name="description" content="Rent high-quality projectors, large screens and powerful PA systems for events, meetings, trainings and parties. Fast same-day delivery and professional setup. Chat on WhatsApp: 08148080273" />
+        <title>Projector Rental NG - Premium Projectors, LED Screens & Interactive Panels</title>
+        <meta name="description" content="Rent high-quality projectors, LED screens, interactive panels, large screens and PA systems. Same-day delivery in Lagos Island. WhatsApp 08148080273" />
         <link rel="icon" href="/favicon.ico" />
-        {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="WAn2wjkdZr9qfCiugOwqMBEdhzID1FvgYgt2OQy27vA" />
       </Head>
 
@@ -37,7 +34,7 @@ const Home = () => {
             </h1>
 
             <p className="max-w-2xl mx-auto text-xl md:text-2xl text-amber-100 mb-12">
-              Professional projectors, crystal-clear large screens, and powerful PA systems delivered and set up the same day across all premium Island zones.
+              Professional projectors, high-resolution LED screens, interactive panels, large screens, and powerful PA systems with same-day delivery.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
@@ -81,9 +78,8 @@ const Home = () => {
               ))}
             </div>
 
-            <div className="mt-16 text-center text-gray-600">
-              <p className="text-lg">Delivery &amp; professional setup: ₦5,000 – ₦20,000 (depending on distance)</p>
-              <p className="mt-2">Same-day service available across all Island premium zones</p>
+            <div className="mt-12 text-center text-gray-600">
+              <p className="text-lg">We also offer <strong>LED Screen Rental</strong> and <strong>Interactive Panel Rental, Sales & Installation</strong>.</p>
             </div>
           </div>
         </section>
@@ -94,35 +90,15 @@ const Home = () => {
         {/* LOCATION BLOCK */}
         <LocationSEOBlock />
 
-        {/* INTERNAL LINKS SECTION - SEO BOOST */}
+        {/* INTERNAL LINKS */}
         <section className="py-16 bg-white border-t">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-8">Learn More About Us</h2>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link 
-                href="/about" 
-                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
-              >
-                About Us
-              </Link>
-              <Link 
-                href="/services" 
-                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
-              >
-                Our Services
-              </Link>
-              <Link 
-                href="/locations" 
-                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
-              >
-                All Locations
-              </Link>
-              <Link 
-                href="/contact" 
-                className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium"
-              >
-                Contact Us
-              </Link>
+              <Link href="/about" className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium">About Us</Link>
+              <Link href="/services" className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium">Our Services</Link>
+              <Link href="/locations" className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium">All Locations</Link>
+              <Link href="/contact" className="px-8 py-4 border border-gray-300 hover:border-amber-500 rounded-2xl hover:bg-amber-50 transition font-medium">Contact Us</Link>
             </div>
           </div>
         </section>
@@ -134,9 +110,7 @@ const Home = () => {
         <section className="bg-gradient-to-br from-amber-900 to-yellow-900 text-white py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-5xl font-bold mb-6">Ready to Elevate Your Next Event?</h2>
-            <p className="text-2xl text-amber-100 mb-10">
-              Message us now for fast response and same-day delivery
-            </p>
+            <p className="text-2xl text-amber-100 mb-10">Message us for fast response and same-day delivery</p>
             <a
               href={whatsappLink}
               target="_blank"
@@ -152,4 +126,3 @@ const Home = () => {
 };
 
 export default Home;
-
