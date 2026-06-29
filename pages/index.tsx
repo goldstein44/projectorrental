@@ -22,7 +22,7 @@ const Home = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* HERO SECTION */}
-        <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-28">
+        <section className="bg-linear-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-28">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-3 rounded-full mb-8 text-sm font-medium">
               📽️ Premium AV Rentals for Lagos Island
@@ -107,7 +107,7 @@ const Home = () => {
         <FAQ />
 
         {/* FINAL CTA */}
-        <section className="bg-gradient-to-br from-amber-900 to-yellow-900 text-white py-24">
+        <section className="bg-linear-to-br from-amber-900 to-yellow-900 text-white py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-5xl font-bold mb-6">Ready to Elevate Your Next Event?</h2>
             <p className="text-2xl text-amber-100 mb-10">Message us for fast response and same-day delivery</p>
