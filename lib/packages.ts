@@ -4,7 +4,7 @@
 export interface Package {
   id: string;
   title: string;
-  price: number;
+  price?: number;           // Made optional for services without fixed price
   description: string;
   popular?: boolean;
   items: string[];
@@ -41,6 +41,20 @@ export const packages: Package[] = [
     items: ["2x speakers + mixer", "Wireless microphone", "1-day rental"],
   },
 
+  // New Key Services - No fixed price shown
+  {
+    id: "led-screen",
+    title: "LED Screen Rental, Sales & Installation",
+    description: "High-resolution LED video walls for events, exhibitions and outdoor functions. Bright and clear in any lighting.",
+    items: ["Large LED Screen (size customizable)", "Professional stand & cabling", "Same-day delivery & setup", "Sales & installation available"],
+  },
+  {
+    id: "interactive-panel",
+    title: "Interactive Whiteboard & Panel Rental, Sales & Installation",
+    description: "Smart interactive panels for classrooms, offices and meeting rooms. Modern collaboration tools.",
+    items: ["55\" or 65\" Touch Panel", "Built-in OS", "Stylus & remote", "Professional installation option"],
+  },
+
   // Combo Packages
   {
     id: "regular-projector-screen",
@@ -55,27 +69,6 @@ export const packages: Package[] = [
     price: 33000,
     description: "Premium visuals for bigger events",
     items: ["HD projector", "8ft x 8ft screen", "Cables & setup"],
-  },
-  {
-    id: "projector-pa",
-    title: "Projector + PA System",
-    price: 30000,
-    description: "Audio + Visual combo",
-    items: ["Regular projector", "Full PA system", "Microphone"],
-  },
-  {
-    id: "hd-projector-pa",
-    title: "HD Projector + PA System",
-    price: 35000,
-    description: "High quality audio & video",
-    items: ["HD projector", "Full PA system", "Wireless mic"],
-  },
-  {
-    id: "screen-pa",
-    title: "Screen + PA System",
-    price: 32000,
-    description: "For events needing sound & display",
-    items: ["8ft screen", "PA system with mic"],
   },
 
   // Full Setup - Most Popular
@@ -98,4 +91,3 @@ export const packages: Package[] = [
 ];
 
 export const deliveryFee = "₦5,000 – ₦20,000 depending on distance";
-
