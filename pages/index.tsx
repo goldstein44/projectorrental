@@ -80,39 +80,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* FEATURED SERVICES GRID - LED & Interactive Panel Highlighted */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-5xl font-bold tracking-tight mb-4">Featured Services</h2>
-              <p className="text-xl text-gray-600">Premium AV solutions including our newest offerings</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* LED Screen */}
-              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
-                <div className="text-5xl mb-6">🖥️</div>
-                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">LED Screen Rental</h3>
-                <p className="text-gray-600 text-lg">High-resolution LED video walls for events, exhibitions, and outdoor functions. Rental, sales & installation with same-day delivery.</p>
-              </div>
-
-              {/* Interactive Panel */}
-              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
-                <div className="text-5xl mb-6">📋</div>
-                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">Interactive Whiteboard & Panel</h3>
-                <p className="text-gray-600 text-lg">Smart interactive panels for classrooms, offices, and meeting rooms. Rental, sales & professional installation.</p>
-              </div>
-
-              {/* Full AV Setup */}
-              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
-                <div className="text-5xl mb-6">🎥</div>
-                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">Full AV Setup Package</h3>
-                <p className="text-gray-600 text-lg">Complete solution: Projector + LED Screen + PA System with full professional setup and delivery.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* HOW IT WORKS */}
         <HowItWorks />
 
