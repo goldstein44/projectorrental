@@ -64,7 +64,7 @@ const Home = () => {
             <div className="text-center mb-16">
               <h2 className="text-5xl font-bold tracking-tight mb-4">Popular Rental Packages</h2>
               <p className="text-xl text-gray-600 max-w-lg mx-auto">
-                From simple meetings to big parties — reliable equipment at great rates
+                Reliable projectors, LED screens, interactive panels and PA systems for every event
               </p>
             </div>
 
