@@ -22,7 +22,7 @@ const Home = () => {
 
       <main className="min-h-screen bg-gray-50">
         {/* HERO SECTION */}
-        <section className="bg-linear-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-28">
+        <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-28">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-3 rounded-full mb-8 text-sm font-medium">
               📽️ Premium AV Rentals for Lagos Island
@@ -62,7 +62,7 @@ const Home = () => {
         <section id="packages" className="py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-5xl font-bold tracking-tight mb-4">Choose Your Perfect Setup</h2>
+              <h2 className="text-5xl font-bold tracking-tight mb-4">Popular Rental Packages</h2>
               <p className="text-xl text-gray-600 max-w-lg mx-auto">
                 From simple meetings to big parties — reliable equipment at great rates
               </p>
@@ -77,9 +77,38 @@ const Home = () => {
                 />
               ))}
             </div>
+          </div>
+        </section>
 
-            <div className="mt-12 text-center text-gray-600">
-              <p className="text-lg">We also offer <strong>LED Screen Rental</strong> and <strong>Interactive Panel Rental, Sales & Installation</strong>.</p>
+        {/* FEATURED SERVICES GRID - LED & Interactive Panel Highlighted */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl font-bold tracking-tight mb-4">Featured Services</h2>
+              <p className="text-xl text-gray-600">Premium AV solutions including our newest offerings</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* LED Screen */}
+              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
+                <div className="text-5xl mb-6">🖥️</div>
+                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">LED Screen Rental</h3>
+                <p className="text-gray-600 text-lg">High-resolution LED video walls for events, exhibitions, and outdoor functions. Rental, sales & installation with same-day delivery.</p>
+              </div>
+
+              {/* Interactive Panel */}
+              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
+                <div className="text-5xl mb-6">📋</div>
+                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">Interactive Whiteboard & Panel</h3>
+                <p className="text-gray-600 text-lg">Smart interactive panels for classrooms, offices, and meeting rooms. Rental, sales & professional installation.</p>
+              </div>
+
+              {/* Full AV Setup */}
+              <div className="bg-white border rounded-3xl p-10 hover:shadow-xl transition-all group">
+                <div className="text-5xl mb-6">🎥</div>
+                <h3 className="text-3xl font-semibold mb-4 group-hover:text-amber-600 transition">Full AV Setup Package</h3>
+                <p className="text-gray-600 text-lg">Complete solution: Projector + LED Screen + PA System with full professional setup and delivery.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -107,7 +136,7 @@ const Home = () => {
         <FAQ />
 
         {/* FINAL CTA */}
-        <section className="bg-linear-to-br from-amber-900 to-yellow-900 text-white py-24">
+        <section className="bg-gradient-to-br from-amber-900 to-yellow-900 text-white py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-5xl font-bold mb-6">Ready to Elevate Your Next Event?</h2>
             <p className="text-2xl text-amber-100 mb-10">Message us for fast response and same-day delivery</p>
