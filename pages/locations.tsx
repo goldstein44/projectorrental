@@ -1,31 +1,41 @@
 // pages/locations.tsx
 import Head from 'next/head';
 import Link from 'next/link';
-import { locations } from '@/lib/locations';
 
 const Locations = () => {
   return (
     <>
       <Head>
-        <title>Our Locations - Projector Rental NG</title>
-        <meta name="description" content="We serve all premium Island and Lekki zones in Lagos. Click on your area to see local rental packages and pricing." />
+        <title>Our Service Locations - Lagos, Abuja & Port Harcourt</title>
+        <meta name="description" content="Fast same-day AV rental across Lagos Island, Lagos Mainland, Abuja and Port Harcourt." />
       </Head>
 
       <main className="max-w-6xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold font-serif text-center mb-4">Our Service Locations</h1>
-        <p className="text-center text-xl text-gray-600 mb-16">Fast same-day delivery across all premium zones</p>
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold font-serif mb-4">Our Service Locations</h1>
+          <p className="text-xl text-gray-600">Fast same-day delivery and professional setup</p>
+        </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {locations.map((location) => (
-            <Link
-              key={location.slug}
-              href={`/districts/${location.slug}`}
-              className="border border-gray-200 hover:border-amber-500 hover:bg-amber-50 rounded-3xl p-8 transition-all group"
-            >
-              <div className="text-amber-600 text-2xl mb-4">📍</div>
-              <h3 className="font-semibold text-xl group-hover:text-amber-700">{location.name}</h3>
-            </Link>
-          ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Link href="/locations/lagos-island" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
+            <h3 className="text-2xl font-semibold mb-6 group-hover:text-amber-600">Lagos Island</h3>
+            <p className="text-gray-600">Lekki Phase 1, Ikoyi, Victoria Island, Banana Island, Ajah, VGC and more</p>
+          </Link>
+
+          <Link href="/locations/lagos-mainland" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
+            <h3 className="text-2xl font-semibold mb-6 group-hover:text-amber-600">Lagos Mainland</h3>
+            <p className="text-gray-600">Gbagada, Maryland, Yaba, Surulere, Ikeja, Festac, Agege and more</p>
+          </Link>
+
+          <Link href="/locations/abuja" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
+            <h3 className="text-2xl font-semibold mb-6 group-hover:text-amber-600">Abuja</h3>
+            <p className="text-gray-600">Maitama, Asokoro, Wuse, Garki, Jabi, Katampe, Lugbe and more</p>
+          </Link>
+
+          <Link href="/locations/port-harcourt" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
+            <h3 className="text-2xl font-semibold mb-6 group-hover:text-amber-600">Port Harcourt</h3>
+            <p className="text-gray-600">GRA, Trans Amadi, D-Line, Rumuola, Peter Odili Road and more</p>
+          </Link>
         </div>
       </main>
     </>
@@ -33,4 +43,3 @@ const Locations = () => {
 };
 
 export default Locations;
-
