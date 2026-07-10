@@ -1,13 +1,8 @@
 // pages/districts/[slug].tsx
-// Dynamic hyperlocal SEO page for every district
-// Generates unique title, meta, H1 and content per location
-
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { getLocationBySlug, locations } from '@/lib/locations';
-import { packages } from '@/lib/packages';
-import PackageCard from '@/components/ui/PackageCard';
 import HowItWorks from '@/components/sections/HowItWorks';
 import FAQ from '@/components/sections/FAQ';
 
@@ -23,7 +18,7 @@ interface DistrictPageProps {
 }
 
 const DistrictPage = ({ location }: DistrictPageProps) => {
-  const whatsappNumber = "08149660626";
+  const whatsappNumber = "08148080273";
   const whatsappLink = `https://wa.me/234${whatsappNumber.replace(/\D/g, '')}`;
 
   return (
@@ -32,15 +27,11 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
         <title>{location.title}</title>
         <meta name="description" content={location.description} />
         <meta name="keywords" content={location.keywords ? location.keywords.join(', ') : ''} />
-        <meta property="og:title" content={location.title} />
-        <meta property="og:description" content={location.description} />
         <link rel="icon" href="/favicon.ico" />
-        {/* Google Search Console Verification */}
-        <meta name="google-site-verification" content="WAn2wjkdZr9qfCiugOwqMBEdhzID1FvgYgt2OQy27vA" />
       </Head>
 
       <main className="min-h-screen bg-gray-50">
-        {/* HERO SECTION - Hyperlocal */}
+        {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-amber-900 to-yellow-900 text-white py-28">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 px-6 py-2 rounded-full mb-6 text-sm">
@@ -52,7 +43,7 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
             </h1>
 
             <p className="text-2xl text-amber-100 max-w-3xl mx-auto mb-10">
-              Professional projector, large screen and PA system rental with same-day delivery and setup in {location.name}.
+              Professional projector, LED screen, interactive panel and PA system rental with same-day delivery and setup in {location.name}.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,43 +52,14 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
                 target="_blank"
                 className="bg-green-500 hover:bg-green-600 text-white text-lg font-semibold px-12 py-4 rounded-2xl flex items-center justify-center gap-3 transition-all"
               >
-                💬 Chat on WhatsApp: 08149660626
+                💬 Chat on WhatsApp: 08148080273
               </a>
               <a
-                href="#packages"
+                href="/services"
                 className="bg-white text-amber-900 hover:bg-amber-100 text-lg font-semibold px-12 py-4 rounded-2xl flex items-center justify-center transition-all"
               >
-                See Packages
+                See Our Services
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* PACKAGES SECTION - Same as homepage but with local context */}
-        <section id="packages" className="py-20 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold tracking-tight mb-4">
-                AV Rental Packages in {location.name}
-              </h2>
-              <p className="text-gray-600 max-w-md mx-auto">
-                Choose from single equipment or full setups. Fast delivery to {location.name}.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {packages.map((pkg) => (
-                <PackageCard 
-                  key={pkg.id} 
-                  packageData={pkg} 
-                  whatsappNumber={whatsappNumber} 
-                />
-              ))}
-            </div>
-
-            <div className="mt-12 text-center text-sm text-gray-500">
-              <p>Delivery &amp; Setup in {location.name}: ₦5,000 – ₦20,000 depending on distance</p>
-              <p className="mt-2">Same-day service available when you book via WhatsApp</p>
             </div>
           </div>
         </section>
@@ -120,7 +82,7 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
               target="_blank"
               className="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white text-2xl font-semibold px-16 py-6 rounded-3xl transition-all hover:scale-105"
             >
-              💬 WhatsApp 08149660626 Now
+              💬 WhatsApp 08148080273 Now
             </a>
           </div>
         </section>
@@ -131,7 +93,7 @@ const DistrictPage = ({ location }: DistrictPageProps) => {
 
 export default DistrictPage;
 
-// Generate static paths for all 21 locations (for fast loading & SEO)
+// Generate static paths
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = locations.map((location) => ({
     params: { slug: location.slug },
@@ -139,11 +101,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false, // 404 for unknown slugs
+    fallback: false,
   };
 };
 
-// Get location data for each page
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug as string;
   const location = getLocationBySlug(slug);
