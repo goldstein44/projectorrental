@@ -25,8 +25,7 @@ const Home = () => {
             </h1>
 
             <p className="max-w-3xl mx-auto text-2xl text-amber-100 mb-12 leading-relaxed">
-              Professional projector rental, LED screen rental, interactive whiteboard rental, and PA system rental in Lagos, Abuja and Port Harcourt. 
-              We provide reliable AV equipment for meetings, trainings, events, weddings, and parties with 24-48hrs notice and professional setup.
+              Professional AV rental service offering projector for rent, LED screen rental, interactive whiteboard rental, PA system rental, and full setup solutions in Lagos, Abuja and Port Harcourt.
             </p>
 
             <a
@@ -39,18 +38,37 @@ const Home = () => {
           </div>
         </section>
 
-        {/* DETAILED COPY - Just above Main Service Areas */}
-        <section className="py-16 bg-white border-b">
+        {/* DETAILED COPY SECTION */}
+        <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <p className="text-2xl text-gray-700 leading-relaxed">
-              Whether you need a projector for rent, LED screen for an exhibition, interactive panel for training, or a complete sound system for your event, 
-              we deliver quality equipment with reliable service. From small meetings to large gatherings, we help you make a lasting impression in Lagos, Abuja, and Port Harcourt.
+            <p className="text-2xl text-gray-700 leading-relaxed mb-16">
+              Whether you are looking for a projector for rent for your next meeting, a large LED screen for an exhibition, an interactive panel for training, or a powerful PA system for your event, we have you covered. 
+              Our reliable equipment and professional service ensure your event runs smoothly in Lagos, Abuja, and Port Harcourt.
             </p>
+
+            <div className="grid md:grid-cols-2 gap-10 text-left">
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">Projector for Rent</h3>
+                <p className="text-gray-600">High-quality projectors perfect for meetings, trainings, and presentations. <Link href="/services" className="text-amber-600 hover:underline">See all projector options →</Link></p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">LED Screen Rental</h3>
+                <p className="text-gray-600">Bright, high-resolution LED screens for events and exhibitions. Rental, sales & installation available. <Link href="/services" className="text-amber-600 hover:underline">Learn more →</Link></p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">Interactive Panel Rental</h3>
+                <p className="text-gray-600">Smart touch panels for modern classrooms and offices. Rental, sales & installation. <Link href="/services" className="text-amber-600 hover:underline">View options →</Link></p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold mb-4">PA System Rental</h3>
+                <p className="text-gray-600">Powerful sound systems for clear audio at any event. <Link href="/services" className="text-amber-600 hover:underline">See PA systems →</Link></p>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* OUR MAIN SERVICE AREAS */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white border-t">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold mb-4">Our Main Service Areas</h2>
             <p className="text-xl text-gray-600 mb-12">Reliable AV rental with 24-48hrs notice</p>
