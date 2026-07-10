@@ -17,7 +17,7 @@ const Home = () => {
       </Head>
 
       <main className="min-h-screen bg-gray-50">
-        {/* HERO SECTION - SEO Optimized */}
+        {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-32">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-8 font-serif">
@@ -39,7 +39,17 @@ const Home = () => {
           </div>
         </section>
 
-        {/* 4 MAIN LOCATIONS */}
+        {/* DETAILED COPY - Just above Main Service Areas */}
+        <section className="py-16 bg-white border-b">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <p className="text-2xl text-gray-700 leading-relaxed">
+              Whether you need a projector for rent, LED screen for an exhibition, interactive panel for training, or a complete sound system for your event, 
+              we deliver quality equipment with reliable service. From small meetings to large gatherings, we help you make a lasting impression in Lagos, Abuja, and Port Harcourt.
+            </p>
+          </div>
+        </section>
+
+        {/* OUR MAIN SERVICE AREAS */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold mb-4">Our Main Service Areas</h2>
@@ -48,7 +58,7 @@ const Home = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Link href="/locations/lagos-island" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-amber-600">Lagos Island</h3>
-                <p className="text-gray-600">Lekki, Ikoyi, Victoria Island and more</p>
+                <p className="text-gray-600">Lekki, Ikoyi, Victoria Island, Banana Island, Ajah, VGC and more</p>
               </Link>
 
               <Link href="/locations/lagos-mainland" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
