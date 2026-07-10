@@ -25,7 +25,8 @@ const Home = () => {
             </h1>
 
             <p className="max-w-3xl mx-auto text-2xl text-amber-100 mb-12 leading-relaxed">
-              Professional AV rental service offering projector for rent, LED screen rental, interactive whiteboard rental, PA system rental, and full setup solutions in Lagos, Abuja and Port Harcourt.
+              Professional projector rental, LED screen rental, interactive whiteboard rental, and PA system rental in Lagos, Abuja and Port Harcourt. 
+              We provide reliable AV equipment for meetings, trainings, events, weddings, and parties with 24-48hrs notice and professional setup.
             </p>
 
             <a
@@ -35,6 +36,22 @@ const Home = () => {
             >
               💬 Rent Projector Now - WhatsApp 08148080273
             </a>
+          </div>
+        </section>
+
+        {/* ROLLING LOCATIONS TICKER */}
+        <section className="bg-amber-50 py-4 border-b overflow-hidden">
+          <div className="flex items-center gap-12 animate-marquee whitespace-nowrap text-lg font-medium text-gray-700">
+            <span>Lagos Island • Lekki • Ikoyi • Victoria Island • Banana Island • Ajah • VGC</span>
+            <span>Lagos Mainland • Ikeja • Surulere • Festac • Agege • Gbagada</span>
+            <span>Abuja • Maitama • Asokoro • Wuse • Garki • Jabi</span>
+            <span>Port Harcourt • GRA • Trans Amadi • D-Line • Peter Odili Road</span>
+            
+            {/* Duplicate for seamless loop */}
+            <span>Lagos Island • Lekki • Ikoyi • Victoria Island • Banana Island • Ajah • VGC</span>
+            <span>Lagos Mainland • Ikeja • Surulere • Festac • Agege • Gbagada</span>
+            <span>Abuja • Maitama • Asokoro • Wuse • Garki • Jabi</span>
+            <span>Port Harcourt • GRA • Trans Amadi • D-Line • Peter Odili Road</span>
           </div>
         </section>
 
