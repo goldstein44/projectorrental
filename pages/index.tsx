@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Rent Projector Lagos | Projector for Rent | Hire Projector Near Me</title>
-        <meta name="description" content="Rent projector, LED screen, interactive panel and PA system in Lagos, Abuja and Port Harcourt. Fast reliable AV rental service with 24-48hrs notice. Call or WhatsApp 08148080273" />
+        <title>Rent Projector Lagos, Abuja & Port Harcourt | LED Screen & Interactive Panel for Rent</title>
+        <meta name="description" content="Rent projector, LED screen, interactive panel and PA system in Lagos, Abuja and Port Harcourt. Fast reliable AV rental service with 24-48hrs notice. WhatsApp 08148080273" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,13 +20,21 @@ const Home = () => {
         {/* HERO SECTION */}
         <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-32">
           <div className="max-w-5xl mx-auto px-6 text-center">
+            {/* Rolling Ticker */}
+            <div className="bg-amber-50 text-gray-700 py-3 mb-10 rounded-2xl overflow-hidden">
+              <div className="flex items-center gap-12 animate-marquee whitespace-nowrap text-base font-medium">
+                <span>Lagos Island • Lagos Mainland • Abuja • Port Harcourt</span>
+                <span>Lagos Island • Lagos Mainland • Abuja • Port Harcourt</span>
+              </div>
+            </div>
+
             <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-8 font-serif">
-              Rent Projector Lagos | LED Screen & Interactive Panel for Rent
+              Rent Projector Lagos, Abuja & Port Harcourt | LED Screen & Interactive Panel for Rent
             </h1>
 
             <p className="max-w-3xl mx-auto text-2xl text-amber-100 mb-12 leading-relaxed">
-              Professional projector rental, LED screen rental, interactive whiteboard rental, and PA system rental in Lagos, Abuja and Port Harcourt. 
-              We provide reliable AV equipment for meetings, trainings, events, weddings, and parties with 24-48hrs notice and professional setup.
+              Professional projector rental, LED screen rental, interactive whiteboard rental, and PA system rental across Lagos, Abuja and Port Harcourt. 
+              Reliable AV equipment with 24-48hrs notice and professional setup.
             </p>
 
             <a
@@ -36,22 +44,6 @@ const Home = () => {
             >
               💬 Rent Projector Now - WhatsApp 08148080273
             </a>
-          </div>
-        </section>
-
-        {/* ROLLING LOCATIONS TICKER */}
-        <section className="bg-amber-50 py-4 border-b overflow-hidden">
-          <div className="flex items-center gap-12 animate-marquee whitespace-nowrap text-lg font-medium text-gray-700">
-            <span>Lagos Island • Lekki • Ikoyi • Victoria Island • Banana Island • Ajah • VGC</span>
-            <span>Lagos Mainland • Ikeja • Surulere • Festac • Agege • Gbagada</span>
-            <span>Abuja • Maitama • Asokoro • Wuse • Garki • Jabi</span>
-            <span>Port Harcourt • GRA • Trans Amadi • D-Line • Peter Odili Road</span>
-            
-            {/* Duplicate for seamless loop */}
-            <span>Lagos Island • Lekki • Ikoyi • Victoria Island • Banana Island • Ajah • VGC</span>
-            <span>Lagos Mainland • Ikeja • Surulere • Festac • Agege • Gbagada</span>
-            <span>Abuja • Maitama • Asokoro • Wuse • Garki • Jabi</span>
-            <span>Port Harcourt • GRA • Trans Amadi • D-Line • Peter Odili Road</span>
           </div>
         </section>
 
