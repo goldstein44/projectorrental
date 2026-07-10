@@ -10,15 +10,16 @@ const Header = () => {
     <>
       <header className="sticky top-0 bg-white border-b shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - Improved */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-11 h-11 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl flex items-center justify-center text-3xl shadow">
+            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-3xl flex items-center justify-center text-4xl shadow-md">
               📽️
             </div>
             <div>
-              <h1 className="text-3xl font-bold tracking-tighter font-serif text-gray-900">
+              <h1 className="text-4xl font-bold tracking-tighter font-serif text-gray-900 leading-none">
                 Projector Rental NG
               </h1>
+              <p className="text-xs text-amber-600 tracking-widest -mt-1">AV RENTAL SERVICES</p>
             </div>
           </Link>
 
@@ -33,10 +34,10 @@ const Header = () => {
 
           {/* Mobile Hamburger */}
           <button 
-            className="md:hidden text-3xl"
+            className="md:hidden text-4xl focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            ☰
+            {isMenuOpen ? '✕' : '☰'}
           </button>
 
           {/* WhatsApp CTA */}
@@ -51,8 +52,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t py-6 px-6">
-            <nav className="flex flex-col gap-6 text-lg">
+          <div className="md:hidden bg-white border-t py-8 px-6">
+            <nav className="flex flex-col gap-6 text-lg font-medium">
               <Link href="/" className="hover:text-amber-600" onClick={() => setIsMenuOpen(false)}>Home</Link>
               <Link href="/about" className="hover:text-amber-600" onClick={() => setIsMenuOpen(false)}>About</Link>
               <Link href="/services" className="hover:text-amber-600" onClick={() => setIsMenuOpen(false)}>Services</Link>
