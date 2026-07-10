@@ -11,23 +11,22 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Projector Rental NG - Reliable AV Equipment Rental</title>
-        <meta name="description" content="Professional projector, LED screen, interactive panel and PA system rental with fast same-day delivery in Lagos, Abuja and Port Harcourt." />
+        <title>Rent Projector Lagos | Projector for Rent | Hire Projector Near Me</title>
+        <meta name="description" content="Rent projector, LED screen, interactive panel and PA system in Lagos, Abuja and Port Harcourt. Fast reliable AV rental service with 24-48hrs notice. Call or WhatsApp 08148080273" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="min-h-screen bg-gray-50">
-        {/* HERO SECTION - Persuasive Copy */}
+        {/* HERO SECTION - SEO Optimized */}
         <section className="bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-950 text-white py-32">
           <div className="max-w-5xl mx-auto px-6 text-center">
             <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-8 font-serif">
-              Professional AV Equipment<br />
-              <span className="text-amber-400">For Successful Events</span>
+              Rent Projector Lagos | LED Screen & Interactive Panel for Rent
             </h1>
 
             <p className="max-w-3xl mx-auto text-2xl text-amber-100 mb-12 leading-relaxed">
-              We provide reliable projectors, high-resolution LED screens, interactive panels, large projection screens, and powerful PA systems. 
-              With prompt same-day delivery and professional setup, we help make your meetings, trainings, conferences, weddings, and parties successful across Lagos, Abuja, and Port Harcourt.
+              Professional projector rental, LED screen rental, interactive whiteboard rental, and PA system rental in Lagos, Abuja and Port Harcourt. 
+              We provide reliable AV equipment for meetings, trainings, events, weddings, and parties with 24-48hrs notice and professional setup.
             </p>
 
             <a
@@ -35,36 +34,36 @@ const Home = () => {
               target="_blank"
               className="inline-block bg-green-500 hover:bg-green-600 text-white text-xl font-semibold px-14 py-6 rounded-3xl transition-all hover:scale-105 shadow-xl"
             >
-              💬 Get Instant Quote on WhatsApp — 08148080273
+              💬 Rent Projector Now - WhatsApp 08148080273
             </a>
           </div>
         </section>
 
-        {/* OUR COVERAGE - 4 Main Locations */}
+        {/* 4 MAIN LOCATIONS */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-4xl font-bold mb-4">We Serve 4 Major Areas</h2>
-            <p className="text-xl text-gray-600 mb-12">Fast same-day delivery and professional setup</p>
+            <h2 className="text-4xl font-bold mb-4">Our Main Service Areas</h2>
+            <p className="text-xl text-gray-600 mb-12">Reliable AV rental with 24-48hrs notice</p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Link href="/locations/lagos-island" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-amber-600">Lagos Island</h3>
-                <p className="text-gray-600">Lekki Phase 1, Ikoyi, Victoria Island, Banana Island, Ajah, VGC and more</p>
+                <p className="text-gray-600">Lekki, Ikoyi, Victoria Island and more</p>
               </Link>
 
               <Link href="/locations/lagos-mainland" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-amber-600">Lagos Mainland</h3>
-                <p className="text-gray-600">Gbagada, Maryland, Yaba, Surulere, Ikeja, Festac, Agege and more</p>
+                <p className="text-gray-600">Ikeja, Surulere, Festac, Agege and more</p>
               </Link>
 
               <Link href="/locations/abuja" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-amber-600">Abuja</h3>
-                <p className="text-gray-600">Maitama, Asokoro, Wuse, Garki, Jabi, Katampe, Lugbe and more</p>
+                <p className="text-gray-600">Maitama, Wuse, Garki, Jabi and more</p>
               </Link>
 
               <Link href="/locations/port-harcourt" className="border rounded-3xl p-10 hover:border-amber-500 transition group">
                 <h3 className="text-2xl font-semibold mb-4 group-hover:text-amber-600">Port Harcourt</h3>
-                <p className="text-gray-600">GRA, Trans Amadi, D-Line, Rumuola, Peter Odili Road and more</p>
+                <p className="text-gray-600">GRA, Trans Amadi, D-Line and more</p>
               </Link>
             </div>
           </div>
@@ -79,8 +78,8 @@ const Home = () => {
         {/* FINAL CTA */}
         <section className="bg-gradient-to-br from-amber-900 to-yellow-900 text-white py-24">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-5xl font-bold mb-6">Ready to Make Your Event Successful?</h2>
-            <p className="text-2xl text-amber-100 mb-10">Message us now for fast response and reliable service</p>
+            <h2 className="text-5xl font-bold mb-6">Need AV Equipment?</h2>
+            <p className="text-2xl text-amber-100 mb-10">Message us for reliable service with 24-48hrs notice</p>
             <a
               href={whatsappLink}
               target="_blank"
