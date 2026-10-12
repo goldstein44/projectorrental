@@ -9,7 +9,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-amber-500 rounded-2xl flex items-center justify-center text-3xl">📽️</div>
               <h3 className="text-2xl font-bold font-serif">Projector Rental NG</h3>
             </div>
-            <p className="text-gray-400">Professional AV rental services in Lagos, Abuja and Port Harcourt.</p>
+            <p className="text-gray-400">Professional AV rental across major cities in Nigeria.</p>
           </div>
 
           <div>
@@ -18,6 +18,7 @@ const Footer = () => {
               <li><a href="/" className="hover:text-white">Home</a></li>
               <li><a href="/about" className="hover:text-white">About Us</a></li>
               <li><a href="/services" className="hover:text-white">Services</a></li>
+              <li><a href="/contact" className="hover:text-white">Contact</a></li>
             </ul>
           </div>
 
@@ -28,13 +29,16 @@ const Footer = () => {
               <li><a href="/locations/lagos-mainland" className="hover:text-white">Lagos Mainland</a></li>
               <li><a href="/locations/abuja" className="hover:text-white">Abuja</a></li>
               <li><a href="/locations/port-harcourt" className="hover:text-white">Port Harcourt</a></li>
+              <li><a href="/locations/calabar" className="hover:text-white">Calabar</a></li>
+              <li><a href="/locations/uyo" className="hover:text-white">Uyo</a></li>
+              <li><a href="/locations/delta" className="hover:text-white">Delta (Asaba & Warri)</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-6">Get In Touch</h4>
-            <a 
-              href="https://wa.me/2348148080273" 
+            <a
+              href="https://wa.me/2348148080273"
               target="_blank"
               className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 px-8 py-4 rounded-2xl text-lg font-semibold transition"
             >
