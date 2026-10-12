@@ -9,7 +9,7 @@ const About = () => {
         <title>About Projector Rental NG - Reliable AV Rental Across Nigeria</title>
         <meta
           name="description"
-          content="Learn about Projector Rental NG and our network of related AV rental businesses in Lagos, Abuja, Port Harcourt, Calabar and Uyo. Professional projector, LED screen and interactive panel rental."
+          content="Learn about Projector Rental NG and our network of related AV rental businesses in Lagos, Abuja, Port Harcourt, Calabar, Uyo and Delta. Professional projector, LED screen and interactive panel rental."
         />
       </Head>
 
@@ -86,6 +86,17 @@ const About = () => {
                   className="text-amber-600 hover:underline font-medium"
                 >
                   www.projectoruyo.com.ng
+                </a>
+              </li>
+              <li>
+                <strong>Projector Delta</strong> —{' '}
+                <a
+                  href="https://www.projectordelta.com.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-600 hover:underline font-medium"
+                >
+                  www.projectordelta.com.ng
                 </a>
               </li>
             </ul>
